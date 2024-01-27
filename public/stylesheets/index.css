@@ -1,0 +1,34 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+.hero {
+    position: relative; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+    content: "";
+    background-image: url('../images/background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.20;
+}
